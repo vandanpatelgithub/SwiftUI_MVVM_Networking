@@ -19,6 +19,7 @@ struct Track: Codable, Identifiable {
     let id = UUID()
     let trackName: String
     let albumName: String
+    var isFavorite = false
     
     private enum CodingKeys: String, CodingKey {
         case albumName = "collectionName"

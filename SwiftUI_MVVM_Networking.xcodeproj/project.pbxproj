@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BC9E41825C4C25A0057CAE3 /* SwiftUI_MVVM_NetworkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E41725C4C25A0057CAE3 /* SwiftUI_MVVM_NetworkingApp.swift */; };
-		2BC9E41A25C4C25A0057CAE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E41925C4C25A0057CAE3 /* ContentView.swift */; };
+		2BC9E41A25C4C25A0057CAE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E41925C4C25A0057CAE3 /* HomeView.swift */; };
 		2BC9E41C25C4C25D0057CAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC9E41B25C4C25D0057CAE3 /* Assets.xcassets */; };
 		2BC9E41F25C4C25D0057CAE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC9E41E25C4C25D0057CAE3 /* Preview Assets.xcassets */; };
 		2BC9E42A25C4C25D0057CAE3 /* SwiftUI_MVVM_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E42925C4C25D0057CAE3 /* SwiftUI_MVVM_NetworkingTests.swift */; };
@@ -17,6 +17,9 @@
 		2BC9E45025C4C46F0057CAE3 /* TrackResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E44F25C4C46F0057CAE3 /* TrackResult.swift */; };
 		2BC9E45D25C4C8480057CAE3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E45C25C4C8480057CAE3 /* Endpoint.swift */; };
 		2BC9E46825C526220057CAE3 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E46725C526220057CAE3 /* HomePageViewModel.swift */; };
+		2BC9E47025C5BD590057CAE3 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E46F25C5BD590057CAE3 /* TrackCell.swift */; };
+		2BC9E47A25C5C6010057CAE3 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E47925C5C6010057CAE3 /* FavoriteView.swift */; };
+		2BC9E47F25C62B050057CAE3 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9E47E25C62B050057CAE3 /* FavoriteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 /* Begin PBXFileReference section */
 		2BC9E41425C4C25A0057CAE3 /* SwiftUI_MVVM_Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_MVVM_Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC9E41725C4C25A0057CAE3 /* SwiftUI_MVVM_NetworkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_NetworkingApp.swift; sourceTree = "<group>"; };
-		2BC9E41925C4C25A0057CAE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2BC9E41925C4C25A0057CAE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2BC9E41B25C4C25D0057CAE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC9E41E25C4C25D0057CAE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BC9E42025C4C25D0057CAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		2BC9E44F25C4C46F0057CAE3 /* TrackResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResult.swift; sourceTree = "<group>"; };
 		2BC9E45C25C4C8480057CAE3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2BC9E46725C526220057CAE3 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		2BC9E46F25C5BD590057CAE3 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		2BC9E47925C5C6010057CAE3 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		2BC9E47E25C62B050057CAE3 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +191,10 @@
 		2BC9E46525C526070057CAE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2BC9E41925C4C25A0057CAE3 /* ContentView.swift */,
+				2BC9E41925C4C25A0057CAE3 /* HomeView.swift */,
+				2BC9E46F25C5BD590057CAE3 /* TrackCell.swift */,
+				2BC9E47925C5C6010057CAE3 /* FavoriteView.swift */,
+				2BC9E47E25C62B050057CAE3 /* FavoriteCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,11 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC9E47025C5BD590057CAE3 /* TrackCell.swift in Sources */,
 				2BC9E45025C4C46F0057CAE3 /* TrackResult.swift in Sources */,
-				2BC9E41A25C4C25A0057CAE3 /* ContentView.swift in Sources */,
+				2BC9E41A25C4C25A0057CAE3 /* HomeView.swift in Sources */,
 				2BC9E46825C526220057CAE3 /* HomePageViewModel.swift in Sources */,
 				2BC9E41825C4C25A0057CAE3 /* SwiftUI_MVVM_NetworkingApp.swift in Sources */,
 				2BC9E44725C4C2F80057CAE3 /* ServiceManager.swift in Sources */,
+				2BC9E47F25C62B050057CAE3 /* FavoriteCell.swift in Sources */,
+				2BC9E47A25C5C6010057CAE3 /* FavoriteView.swift in Sources */,
 				2BC9E45D25C4C8480057CAE3 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
