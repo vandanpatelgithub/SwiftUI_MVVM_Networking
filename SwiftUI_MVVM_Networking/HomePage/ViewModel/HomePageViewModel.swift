@@ -17,7 +17,7 @@ class HomePageViewModel: HomePageViewModelProtocol {
     let serviceManager: ServiceManagerProtocol
     @Published var tracks = [Track]()
     
-    init(serviceManager: ServiceManagerProtocol) {
+    init(serviceManager: ServiceManagerProtocol = ServiceManager()) {
         self.serviceManager = serviceManager
     }
     
@@ -33,5 +33,13 @@ class HomePageViewModel: HomePageViewModelProtocol {
                 print("DEBUG: \(error.localizedDescription)")
             }
         }
+    }
+    
+    var favoriteTracks: [Track] {
+        self.tracks.filter { $0.isFavorite }
+    }
+    
+    func favoriteImageName(track: Track) -> String {
+        track.isFavorite ? "star.square.fill" : "star.square"
     }
 }

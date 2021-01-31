@@ -11,7 +11,22 @@ import SwiftUI
 struct SwiftUI_MVVM_NetworkingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: HomePageViewModel(serviceManager: ServiceManager()))
+            TabView {
+                let viewModel = HomePageViewModel(serviceManager: ServiceManager())
+                HomeView(viewModel: viewModel)
+                    .tabItem {
+                        Image(systemName: "homekit")
+                        Text("Home")
+                    }
+                
+                FavoriteView(viewModel: viewModel)
+                    .tabItem {
+                        Image(systemName: "star.square")
+                        Text("Favorites")
+                    }
+            }
+            .accentColor(.red)
+            
         }
     }
 }
